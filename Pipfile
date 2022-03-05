@@ -5,9 +5,10 @@ name = "pypi"
 
 [packages]
 flask = "*"
-gunicorn = "==20.1.0"
-eventlet = "==0.30.2"
-gevent-websocket = "*"
+flask-session = "*"
+flask-socketio = "*"
+gunicorn = "*"
+gevent = "*"
 
 [dev-packages]
 
