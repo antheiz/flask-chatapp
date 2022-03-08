@@ -1,1 +1,1 @@
-web: gunicorn --bind 0.0.0.0:$PORT -k geventwebsocket.gunicorn.workers.GeventWebSocketWorker -w 1 run:app
+web: gunicorn --worker-class eventlet -w 1 run:app
