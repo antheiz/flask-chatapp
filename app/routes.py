@@ -48,9 +48,3 @@ def leave(message):
     session.clear()
     emit('status', {'msg': str(username) + ': keluar dari room'}, room=room)
 
-# @socketio.on('server_event')
-# def handle_message(data):
-#     print('received message : ' + data)
-#     time.sleep(1)
-#     emit('client_event', 'Hello from Server!')
-

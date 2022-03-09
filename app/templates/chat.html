@@ -84,13 +84,12 @@
 
             <script type="text/javascript" charset="utf-8">
 
-                var socket = io.connect('https://lumintu-chatapp.herokuapp.com/chat');
+                var socket = io.connect('http://' + document.domain + ':' + location.port + '/chat');
                 socket.on('connect', function () {
                     socket.emit('join', {});
                 });
 
                 socket.on('status', function(data) {
-                    // document.getElementById('output').innerHTML = data.msg;
                     $('#chat').val($('#chat').val() + '<' + data.msg + '>\n');
                     $('#chat').scrollTop($('#chat')[0].scrollHeight);
                 });
@@ -116,6 +115,7 @@
                     });
                 }
 
+                
 
                 // socket.on('disconnect', function () {
                 //     console.log('I\'m Disconnected!');
