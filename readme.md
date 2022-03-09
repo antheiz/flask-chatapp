@@ -24,7 +24,7 @@ Lihat Demo pada link berikut ini : https://lumintu-chatapp.herokuapp.com/
 
 - Masuk ke directory Project
   ```
-    $ cd ppdb-project
+    $ cd flask-chatapp
   ```
 
 - Buat environment & Install package yang dibutuhkan
