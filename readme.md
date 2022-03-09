@@ -19,7 +19,7 @@ Lihat Demo pada link berikut ini : https://lumintu-chatapp.herokuapp.com/
 - Clone Repository ini :
 
   ```
-    $ git clone https://github.com/antheiz/ppdb-project.git
+    $ git clone https://github.com/antheiz/flask-chatapp.git
   ```
 
 - Masuk ke directory Project
