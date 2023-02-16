@@ -1,47 +1,32 @@
-# Realtime Chat - Dikembangkan menggunakan SocketIO + Flask
+## Flask - ChatApp implement with SocketIO
 
-## Demo Realtime Chat
-Lihat Demo pada link berikut ini : https://lumintu-chatapp.herokuapp.com/
+This is example code for implement SocketIO with Flask-SocketIO
 
-<br>
+## 🚀 Quickstart
 
-## Syarat Menjalankan Project
+**Requirements**
 
-- Pastikan telah menginstall **git** pada perangkat anda. periksa dengan mengetik di teriminal/command prompt "*git --version*"
-- Pastikan telah menginstall **python** pada perangkat anda. periksa dengan mengetik di teriminal/command prompt "*python -V*"
-- Pastikan telah menginstall package manager **pip** pada perangkat anda. periksa dengan mengetik di teriminal/command prompt "*pip -V*"
+- Make sure you has been install **git**, **pip**, and **python** in your device
 
-## Panduan Menjalan Project
+**Project setup**
 
-*Buka Terminal/Command Prompt pada komputer anda dan ketik*
-<br>
+- Clone this Project
 
-- Clone Repository ini :
-
-  ```
-    $ git clone https://github.com/antheiz/flask-chatapp.git
-  ```
-
-- Masuk ke directory Project
-  ```
-    $ cd flask-chatapp
+    ```sh
+    git clone https://github.com/antheiz/flask-chatapp.git
+    cd flask-chatapp/
+    ```
+    
+- Create and activated development environment
+  
+  ```sh
+  pip install pipenv
+  pipenv install -r requirements.txt
+  pipenv shell
   ```
 
-- Buat environment & Install package yang dibutuhkan
+**Run Project**
 
   ```
-    $ pip install pipenv
-    $ pipenv install -r requirements.txt
-  ```
-
-- Aktivasi/Masuk ke environments:
-
-  ```
-    $ pipenv shell
-  ```
-
-- Jalankan Project
-
-  ```
-    $ gunicorn --worker-class eventlet -w 1 run:app
+    gunicorn --worker-class eventlet -w 1 run:app
   ```
