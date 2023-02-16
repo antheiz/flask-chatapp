@@ -1,1 +1,3 @@
-myenv
+# ignore file from git
+env
+__pycache__
