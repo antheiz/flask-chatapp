@@ -30,3 +30,6 @@ This is example code for implement SocketIO with Flask-SocketIO
   ```
     gunicorn --worker-class eventlet -w 1 run:app
   ```
+
+## License
+Licensed under [MIT](LICENSE)
